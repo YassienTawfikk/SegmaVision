@@ -1,1 +1,221 @@
-# Segmentation
+## SigmaVision
+
+### Overview
+
+**SigmaVision** is a modular image analysis application that integrates classical thresholding techniques with **unsupervised machine learning-based segmentation**. It is designed to process grayscale and color images using both traditional computer vision methods and modern clustering algorithms, enabling side-by-side visualization of results through an interactive GUI.
+
+> This project combines classical image processing with **unsupervised machine learning**, including clustering techniques like **K-means** and **Mean Shift**, to support real-world applications in medical imaging and pattern discovery.
+
+![SegmaVision Overview](https://github.com/user-attachments/assets/b6d5490e-700e-4fbe-94b2-1ecf6a6bbc2c)
+
+---
+
+### Features & Examples
+
+Each feature includes a table with side-by-side **original** and **processed** images for consistent comparison.
+
+---
+
+#### 🔲 Thresholding Techniques
+
+SigmaVision supports multiple thresholding methods for **grayscale images**:
+
+* **Otsu Thresholding**
+* **Optimal Global Thresholding**
+* **Spectral Thresholding (multi-mode)**
+* **Local Adaptive Thresholding**
+
+##### 📌 Example – Otsu Thresholding
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>Otsu Result</b></td>
+</tr>
+<tr>
+<td><img src="" width="250"/></td>
+<td><img src="" width="250"/></td>
+</tr>
+</table>
+
+##### 📌 Example – Local Thresholding
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>Local Thresholding</b></td>
+</tr>
+<tr>
+<td><img src="" width="250"/></td>
+<td><img src="" width="250"/></td>
+</tr>
+</table>
+
+##### 📌 Example – Spectral Thresholding
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>Spectral Result</b></td>
+</tr>
+<tr>
+<td><img src="" width="250"/></td>
+<td><img src="" width="250"/></td>
+</tr>
+</table>
+
+---
+
+#### Unsupervised Machine Learning Segmentation
+
+Includes clustering-based unsupervised ML segmentation for both grayscale and color images:
+
+* **K-Means** – Number of clusters: 3
+* **Region Growing** -  Tolerance threshold: 20
+* **Agglomerative Clustering** – Number of clusters: 8
+* **Mean Shift Clustering** – Bandwidth: 10, Spatial radius: 15
+
+##### Example – K-Means Clustering
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>K-Means Output</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/77733248-8247-43f2-bd1c-23ea2af882c0" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/975dd435-ca89-4841-a346-f4b5a461e182" width="250"/></td>
+</tr>
+</table>
+
+##### Example – Region Growing
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>Region Grown Output</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/dffda12c-fc92-4025-8613-edd28b152e7e" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/bbb224b2-7883-44f8-b64a-e8ff494f1d43" width="250"/></td>
+</tr>
+</table>
+
+##### Example – Agglomerative Clustering
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>Agglomerative Result</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/715d3051-e596-41ac-b49e-8a4f3c1f2b1c" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/88b6e759-424e-4867-86bd-37ea00d8e0b3" width="250"/></td>
+</tr>
+</table>
+
+
+##### Example – Mean Shift Clustering
+
+<table>
+<tr>
+<td><b>Original Image</b></td>
+<td><b>Mean Shift Result</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/60c406db-fa14-4f75-8f9a-b876242df182" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/3c7d5b42-acfc-4f99-929f-a4a85533f5e2" width="250"/></td>
+</tr>
+</table>
+
+---
+
+### 🛠 Project Structure
+
+```plaintext
+SigmaVision/
+├── main.py
+├── requirements.txt
+├── README.md
+
+├── app/
+│   ├── controller.py
+│   ├── design/
+│   │   ├── tools/gui_utilities.py
+│   │   ├── ui/main_layout.ui
+│   │   └── main_layout.py
+│   ├── processing/
+│   │   ├── thresholding.py
+│   │   ├── segmentation.py
+│   │   └── segmentation_clusters.py
+│   ├── services/image_service.py
+│   └── utils/
+│       ├── logging_manager.py
+│       └── clean_cache.py
+
+└── static/
+    ├── icons/
+    ├── images/
+    └── docs/ProjectStructure.txt
+```
+
+---
+
+### Installation
+
+```bash
+git clone https://github.com/YassienTawfikk/SegmaVision.git
+cd SegmaVision
+pip install -r requirements.txt
+python main.py
+```
+
+---
+
+### Use Cases
+
+* Medical image segmentation (MRI, CT)
+* Visual teaching tool for thresholding/clustering
+* Research prototyping in unsupervised computer vision
+* Comparative evaluation of segmentation algorithms
+
+---
+
+## Contributions
+
+<div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/YassienTawfikk" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/126521373?v=4" width="150px;" alt="Yassien Tawfik"/>
+        <br />
+        <sub><b>Yassien Tawfik</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/nancymahmoud1" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/125357872?v=4" width="150px;" alt="Nancy Mahmoud"/>
+        <br />
+        <sub><b>Nancy Mahmoud</b></sub>
+      </a>
+    </td>    
+    <td align="center">
+      <a href="https://github.com/nariman-ahmed" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/126989278?v=4" width="150px;" alt="Nariman Ahmed"/>
+        <br />
+        <sub><b>Nariman Ahmed</b></sub>
+      </a>
+    </td>       
+        <td align="center">
+      <a href="https://github.com/madonna-mosaad" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/127048836?v=4" width="150px;" alt="Madonna Mosaad"/>
+        <br />
+        <sub><b>Madonna Mosaad</b></sub>
+      </a>
+    </td>    
+  </tr>
+</table>
+</div>
+
+---
