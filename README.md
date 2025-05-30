@@ -38,18 +38,26 @@ This README showcases global thresholding results only, while local adaptive met
 </tr>
 </table>
 
+> **Insight:** Otsu's method automatically finds an optimal threshold by minimizing intra-class variance. Ideal for bimodal histograms like this one.
+
+---
+
 ##### 📌 Example – Optimal Thresholding
 
 <table>
 <tr>
 <td><b>Original Image</b></td>
-<td><b>Local Thresholding</b></td>
+<td><b>Optimal Threshold</b></td>
 </tr>
 <tr>
 <td><img src="https://github.com/user-attachments/assets/1fa3767a-6484-4916-a425-21883a2b01ba" width="250"/></td>
 <td><img src="https://github.com/user-attachments/assets/9933ae13-d39d-4b0d-b02a-1279cc5f8954" width="250"/></td>
 </tr>
 </table>
+
+> **Insight:** The optimal global threshold balances intensity contrast in a way that highlights object boundaries more prominently.
+
+---
 
 ##### 📌 Example – Spectral Thresholding
 
@@ -64,18 +72,22 @@ This README showcases global thresholding results only, while local adaptive met
 </tr>
 </table>
 
+> **Insight:** Spectral thresholding applies multi-mode separation, capturing subtle intensity variations beyond simple binary division.
+
 ---
 
-#### Unsupervised Machine Learning Segmentation
+#### 🧠 Unsupervised Machine Learning Segmentation
 
 Includes clustering-based unsupervised ML segmentation for both grayscale and color images:
 
 * **K-Means** – Number of clusters: 3
-* **Region Growing** -  Tolerance threshold: 20
+* **Region Growing** – Tolerance threshold: 20
 * **Agglomerative Clustering** – Number of clusters: 8
 * **Mean Shift Clustering** – Bandwidth: 10, Spatial radius: 15
 
-##### Example – K-Means Clustering
+---
+
+##### 📌 Example – K-Means Clustering
 
 <table>
 <tr>
@@ -88,7 +100,11 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 </tr>
 </table>
 
-##### Example – Region Growing
+> **Insight:** K-means groups similar pixel intensities into 3 distinct clusters, effectively isolating texture zones in the image.
+
+---
+
+##### 📌 Example – Region Growing
 
 <table>
 <tr>
@@ -101,7 +117,11 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 </tr>
 </table>
 
-##### Example – Agglomerative Clustering
+> **Insight:** Region growing expands from seed points until pixel similarity exceeds the defined threshold. Useful for segmented anatomy or textures.
+
+---
+
+##### 📌 Example – Agglomerative Clustering
 
 <table>
 <tr>
@@ -114,8 +134,11 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 </tr>
 </table>
 
+> **Insight:** This hierarchical method gradually merges pixel clusters. With 8 clusters, it reveals coarse structure across large visual segments.
 
-##### Example – Mean Shift Clustering
+---
+
+##### 📌 Example – Mean Shift Clustering
 
 <table>
 <tr>
@@ -128,7 +151,8 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 </tr>
 </table>
 
----
+> **Insight:** Mean shift clustering adapts based on local density, revealing object contours and textures without needing to predefine clusters.
+
 
 ### 🛠 Project Structure
 
