@@ -1,4 +1,4 @@
-SiftSee/
+SigmaVision/
 │
 ├── README.md
 ├── requirements.txt
@@ -10,21 +10,21 @@ SiftSee/
 │   ├── design/
 │   │   ├── tools/
 │   │   │   └── gui_utilities.py
-│   │   │
 │   │   ├── ui/
 │   │   │   └── main_layout.ui
-│   │   │
 │   │   └── main_layout.py
 │   │
 │   ├── processing/
+│   │   │── segmentation.py
+│   │   │── segmentation_clusters.py
+│   │   └── thresholding.py
 │   │
 │   ├── services/
 │   │   └── image_service.py
 │   │
-│   ├── tests/
-│   │   └── design_test.py
 │   │
 │   └── utils/
+│       │── logging_manager.py
 │       └── clean_cache.py
 │
 └── static/
@@ -37,4 +37,4 @@ SiftSee/
     │   └── image11
     │
     └── docs/
-        └── OOP Structure.txt
+        └── ProjectStructure.txt
