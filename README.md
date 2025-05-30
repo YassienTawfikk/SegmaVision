@@ -18,12 +18,12 @@ Each feature includes a table with side-by-side **original** and **processed** i
 
 #### 🔲 Thresholding Techniques
 
-SigmaVision supports multiple thresholding methods for **grayscale images**:
+SigmaVision supports a variety of thresholding methods for grayscale images, combining both global and local strategies.
+This README showcases global thresholding results only, while local adaptive methods are also implemented in the application.
 
 * **Otsu Thresholding**
 * **Optimal Global Thresholding**
-* **Spectral Thresholding (multi-mode)**
-* **Local Adaptive Thresholding**
+* **Spectral Thresholding**
 
 ##### 📌 Example – Otsu Thresholding
 
@@ -33,12 +33,12 @@ SigmaVision supports multiple thresholding methods for **grayscale images**:
 <td><b>Otsu Result</b></td>
 </tr>
 <tr>
-<td><img src="" width="250"/></td>
-<td><img src="" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/ff6d72e0-c32c-4900-9337-86a857c856ad" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/b44ca35b-7e0a-49c8-b721-387b9443aa16" width="250"/></td>
 </tr>
 </table>
 
-##### 📌 Example – Local Thresholding
+##### 📌 Example – Optimal Thresholding
 
 <table>
 <tr>
@@ -46,8 +46,8 @@ SigmaVision supports multiple thresholding methods for **grayscale images**:
 <td><b>Local Thresholding</b></td>
 </tr>
 <tr>
-<td><img src="" width="250"/></td>
-<td><img src="" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/1fa3767a-6484-4916-a425-21883a2b01ba" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/9933ae13-d39d-4b0d-b02a-1279cc5f8954" width="250"/></td>
 </tr>
 </table>
 
@@ -59,8 +59,8 @@ SigmaVision supports multiple thresholding methods for **grayscale images**:
 <td><b>Spectral Result</b></td>
 </tr>
 <tr>
-<td><img src="" width="250"/></td>
-<td><img src="" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/8b3fc166-4b0e-4d2d-8ac9-736e5359fe42" width="250"/></td>
+<td><img src="https://github.com/user-attachments/assets/39a30d9c-0f46-4368-96ab-2ccdbe4b6326" width="250"/></td>
 </tr>
 </table>
 
