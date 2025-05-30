@@ -25,7 +25,7 @@ This README showcases global thresholding results only, while local adaptive met
 * **Optimal Global Thresholding**
 * **Spectral Thresholding**
 
-##### 📌 Example – Otsu Thresholding
+##### Example – Otsu Thresholding
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ This README showcases global thresholding results only, while local adaptive met
 
 ---
 
-##### 📌 Example – Optimal Thresholding
+##### Example – Optimal Thresholding
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ This README showcases global thresholding results only, while local adaptive met
 
 ---
 
-##### 📌 Example – Spectral Thresholding
+##### Example – Spectral Thresholding
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ This README showcases global thresholding results only, while local adaptive met
 
 ---
 
-#### 🧠 Unsupervised Machine Learning Segmentation
+#### Unsupervised Machine Learning Segmentation
 
 Includes clustering-based unsupervised ML segmentation for both grayscale and color images:
 
@@ -87,7 +87,7 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 
 ---
 
-##### 📌 Example – K-Means Clustering
+##### Example – K-Means Clustering
 
 <table>
 <tr>
@@ -104,7 +104,7 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 
 ---
 
-##### 📌 Example – Region Growing
+##### Example – Region Growing
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 
 ---
 
-##### 📌 Example – Agglomerative Clustering
+##### Example – Agglomerative Clustering
 
 <table>
 <tr>
@@ -138,7 +138,7 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 
 ---
 
-##### 📌 Example – Mean Shift Clustering
+##### Example – Mean Shift Clustering
 
 <table>
 <tr>
