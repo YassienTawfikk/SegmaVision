@@ -153,36 +153,6 @@ Includes clustering-based unsupervised ML segmentation for both grayscale and co
 
 > **Insight:** Mean shift clustering adapts based on local density, revealing object contours and textures without needing to predefine clusters.
 
-
-### 🛠 Project Structure
-
-```plaintext
-SigmaVision/
-├── main.py
-├── requirements.txt
-├── README.md
-
-├── app/
-│   ├── controller.py
-│   ├── design/
-│   │   ├── tools/gui_utilities.py
-│   │   ├── ui/main_layout.ui
-│   │   └── main_layout.py
-│   ├── processing/
-│   │   ├── thresholding.py
-│   │   ├── segmentation.py
-│   │   └── segmentation_clusters.py
-│   ├── services/image_service.py
-│   └── utils/
-│       ├── logging_manager.py
-│       └── clean_cache.py
-
-└── static/
-    ├── icons/
-    ├── images/
-    └── docs/ProjectStructure.txt
-```
-
 ---
 
 ### Installation
